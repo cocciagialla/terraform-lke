@@ -17,11 +17,11 @@ resource "linode_lke_cluster" "kubernetes-cluster" {
     }
   }
 
-  lifecycle {
-    ignore_changes = [
-      pool.0.count
-    ]
-  }
+#  lifecycle {
+#    ignore_changes = [
+#      pool.0.count
+#    ]
+#  }
 }
 
 
